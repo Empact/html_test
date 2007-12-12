@@ -4,17 +4,7 @@ functional and integration tests. In addition you can run
 the HTML and link tests against a production or staging server over HTTP.
 
 == Installation
-For some reason the script/plugin HTTP fetcher fails to download the file
-lib/http_test.rb in the plugin. A workaround is to use the -o switch:
-
-  ruby script/plugin install -o http://svn.marklunds.com/plugins/http_test
-
-Alternatively you can do:
-
-  cd vendor/plugins
-  svn export http://svn.marklunds.com/plugins/http_test
-
-That way you get an export (without .svn directories) instead of a checkout.
+  ruby script/plugin install http://htmltest.googlecode.com/svn/trunk/html_test
 
 == Usage
 - Add validation to your controller or integration tests:
